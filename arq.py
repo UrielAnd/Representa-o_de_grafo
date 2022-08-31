@@ -12,7 +12,7 @@ class Arq:
     #SUCESSORES + GRAU DE SAÍDA DO VALOR INFORMADO PELO USUÁRIO    
     def sucessores(self,escolha,numUser):
         cont = 0        #Conta graus
-        hp = 0
+        hp = 0      #Variável auxiliar
         #print (self.lista_Arq)
         for i in self.lista_Arq:
             #print(i)
@@ -39,13 +39,13 @@ class Arq:
                     if escolha == "3":
                         print(listfilter[1])  #printa as respostas
                     cont += 1
-            hp=1
+            hp=1    
         return cont
 
     #PREDECESSORES + GRAU DE ENTRADA DO VALOR INFORMADO PELO USUÁRIO 
     def predecessores(self,escolha,numUser):
         cont = 0        #Conta grau
-        hp=0
+        hp=0        #Variável auxiliar
         #print (self.lista_Arq)
         for i in self.lista_Arq:
             #print(i)
